@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JM Veículos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head> 
+<body>
+    <div class="container mt-5">
+        <h1>JM Veículos</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Cor</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                    <th>Estado</th>
+                    <th>Km_rodados</th>
+                    <th>Leilao</th>
+                    <th>Pagamento</th>
+                    <!-- Adicione as outras colunas aqui -->
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for veiculo in veiculos %}
+                <tr>
+                    <td>{{ veiculo[1] }}</td>
+                    <td>{{ veiculo[2] }}</td>
+                    <td>{{ veiculo[3] }}</td>
+                    <td>{{ veiculo[4] }}</td>
+                    <td>{{ veiculo[5] }}</td>
+                    <td>{{ veiculo[6] }}</td>
+                    <td>{{ veiculo[7] }}</td>
+                    <td>{{ veiculo[8] }}</td>
+                    <td>{{ veiculo[9] }}</td>
+                    <!-- Adicione as outras colunas aqui -->
+                    <td>
+                        <a href="/excluir_veiculo/{{ veiculo[0] }}" class="btn btn-danger">Excluir</a>
+                        <a href="/editar_veiculo/{{ veiculo[0] }}" class="btn btn-primary">Editar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h2>Adicionar Veículo</h2>
+        <form  action="/adicionar">
+            <!-- Crie campos de entrada para as informações do veículo aqui -->
+            <button type="submit" class="btn btn-primary">Adicionar</button>
+        </form>
+    </div>
+</body>
+</html>
