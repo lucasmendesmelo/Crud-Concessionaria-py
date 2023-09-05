@@ -15,7 +15,7 @@ Clone o Repositório: Clone este repositório em sua máquina local usando o com
 
 
 
-git clone https://github.com/lucasmendesmelo/Projeto-Concessionaria
+git clone https://github.com/lucasmendesmelo/Projeto-Concessionaria-py.git
 
 Configuração do Ambiente: Certifique-se de ter o Python, Flask e MySQL instalados. Configure o banco de dados de acordo com as informações fornecidas
 
