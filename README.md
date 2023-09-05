@@ -3,7 +3,7 @@
 Este é um projeto simples de uma Concessionária automotiva desenvolvido com o objetivo de aprimorar e aplicar conhecimentos em Python. A aplicação utiliza o framework Flask para o lado do servidor e o banco de dados MySQL para armazenar informações essenciais.
 
 Tecnologias Utilizadas:
-Flask: Utilizamos o framework Flask para criar um servidor web robusto e escalável em Python.
+Flask: Utilizei o framework Flask para criar um servidor web robusto e escalável em Python.
 
 MySQL: O banco de dados MySQL é utilizado para armazenar informações sobre veículos.
 
